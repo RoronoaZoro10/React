@@ -1,8 +1,34 @@
 Reacts notes
 
 to set up react app:-
-npm install vite@latest - this code is used to install vite
-npm create vite@latest - with this we can able to create react app
-npm cd folder name - once the app folder is created, get inside the folder
-npm install - this command will install all the dependency required for react
-npm run dev - this command is used to host the website
+* npm install vite@latest - this code is used to install vite
+* npm create vite@latest - with this we can able to create react app
+* npm cd folder name - once the app folder is created, get inside the folder
+* npm install - this command will install all the dependency required for react
+* npm run dev - this command is used to host the website
+
+components-
+* every thing in react is considered as component.
+* one component can have another component inside it.
+* to use a component always, export the component from the component.jsx and import that component.jsx in the component page you want to use.
+* inside a return you can't put more than 1 HTML tag. so to put more than one html tag use
+    * <div>.....</div>
+        or
+    * <>........</>
+* in a return statement if you want to insert some javascript variable or programs, then use {} to insert the values like variables
+and javascript programs.
+* even whatever is imported can be used inside the return of the component like{import_name} even images that are been importing.
+
+styles in react-
+* there are many methods to style in react
+    * first method is styling everything from index.css, but there is some problem in this method. it will apply for all the html present in 
+    react components.
+    * second method is know as module method, where the components where created in a folder and the components.jsx and css_stylesheet will
+    be placed in that folder. need to import the style_sheet in the components.jsx. once imported it will be placed in{style.ClassName} .
+    * third method is inline method. where the style will be written inside the components.jsx itself.
+
+props-
+* using using we can pass the values as the arugments to components. by using props we can give different values for components to display.
+* if no arugments were passed to components. default components can be set. so when there is no prop arugment present, default values will be
+passed.
+
