@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color : blue;
+    text-align: center;
+    
+}
+
+h3{
+    color : black;
+    font-size: 20px;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left : 50%;
+    color : white;
+}
+/*display inline-block is used to arrange the content in horizontal way
+  padding is used to create a space inside the border
+  margin is used to create a space outside the border*/
+#genres{
+    background-color: grey;
+    display : inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    width : 400px;
+    height : 350px;
+    margin: 20px;
+}
+
