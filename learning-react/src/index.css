@@ -26,6 +26,10 @@ footer{
     left : 50%;
     color : white;
 }
+
+button{
+    left: 50%;
+}
 /*display inline-block is used to arrange the content in horizontal way
   padding is used to create a space inside the border
   margin is used to create a space outside the border*/
@@ -35,6 +39,6 @@ footer{
     border: 1px solid black;
     padding: 10px;
     width : 400px;
-    height : 350px;
+    height : 400px;
     margin: 20px;
 }

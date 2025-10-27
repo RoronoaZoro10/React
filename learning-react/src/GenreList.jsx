@@ -14,9 +14,11 @@ let genre = [{name : "Action", image : action},
     {name : "Adventure"}
 ]
 
+genre.sort((n1,n2)=> (n1.name ?? "").localeCompare(n2.name))
+
 function GenreList()
 {
-    let genrelist = genre.map((g) => <Genre name={g.name} image={g.image}/>)  
+    let genrelist = genre.map((g,index) => <Genre key={index} name={g.name} image={g.image}/>)  
 
     return (
         <>
