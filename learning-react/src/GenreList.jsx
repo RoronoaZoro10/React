@@ -3,22 +3,28 @@ import Genre from './Genre'
 import action from './assets/action.jpeg'
 import romance from './assets/romance.jpeg'
 import comedy from './assets/comedy.jpeg'
+import { useState } from 'react'
 import error from './assets/error.jpg'
 
 
 
-let genre = [{name : "Action", image : action},
-    {name : "Romance", image : romance},
-    {name : "Comedy", image : comedy},
-    {},
-    {name : "Adventure"}
-]
-
-genre.sort((n1,n2)=> (n1.name ?? "").localeCompare(n2.name))
-
 function GenreList()
 {
-    let genrelist = genre.map((g,index) => <Genre key={index} name={g.name} image={g.image}/>)  
+    let [genre,setGenre] = useState([{id : 1, name : "Action", image : action},
+        {id : 2, name : "Romance", image : romance},
+        {id : 3, name : "Comedy", image : comedy},
+        {id : 4},
+        {id : 5, name : "Adventure"}
+    ])
+
+    function deleteGenre(id)
+    {
+        let newGenre = genre.filter((genrel)=> genrel.id != id)
+        setGenre(newGenre)
+    }    
+
+
+    let genrelist = genre.map((g) => <Genre key={g.id} id={g.id} name={g.name} image={g.image} deleteGenre={deleteGenre}/>)
 
     return (
         <>
