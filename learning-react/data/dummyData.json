@@ -1,0 +1,10 @@
+{
+    "genre" : [
+        {"id" : 1, "name" : "Action", "image" : "./data/action"},
+        {"id" : 2, "name" : "Romance", "image" : "./data/romance"},
+        {"id" : 3, "name" : "Comedy", "image" : "./data/comedy"},
+        {"id" : 4},
+        {"id" : 5, "name" : "Adventure"}
+    ]
+}
+

@@ -3,20 +3,26 @@ import Genre from './Genre'
 import action from './assets/action.jpeg'
 import romance from './assets/romance.jpeg'
 import comedy from './assets/comedy.jpeg'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import error from './assets/error.jpg'
 
 
 
 function GenreList()
 {
-    let [genre,setGenre] = useState([{id : 1, name : "Action", image : action},
-        {id : 2, name : "Romance", image : romance},
-        {id : 3, name : "Comedy", image : comedy},
-        {id : 4},
-        {id : 5, name : "Adventure"}
-    ])
+    let [genre,setGenre] = useState()
 
+    useEffect(()=>{
+        fetch("http://localhost:3000/genre")
+        .then((response)=> response.json())
+        .then((data)=> setGenre(data))
+    },[])
+
+    if(!genre)
+    {
+        return <></>
+    }
+    
     function deleteGenre(id)
     {
         let newGenre = genre.filter((genrel)=> genrel.id != id)
