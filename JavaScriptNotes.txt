@@ -1,1 +1,4 @@
 * to check if the value is null or not, use "??" Nullish Coalescing Operator to determine.
+
+the below code will host json data -
+npx json-server --watch data/dummyData.json --port 3000 --static ./data

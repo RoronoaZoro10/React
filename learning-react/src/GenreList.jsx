@@ -1,10 +1,7 @@
 
 import Genre from './Genre'
-import action from './assets/action.jpeg'
-import romance from './assets/romance.jpeg'
-import comedy from './assets/comedy.jpeg'
 import { useState,useEffect } from 'react'
-import error from './assets/error.jpg'
+import load from './assets/loading_gif1.gif'
 
 
 
@@ -20,7 +17,9 @@ function GenreList()
 
     if(!genre)
     {
-        return <></>
+        return (
+            <img src={load}></img>
+        )
     }
     
     function deleteGenre(id)

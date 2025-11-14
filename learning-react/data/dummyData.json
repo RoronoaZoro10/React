@@ -1,8 +1,8 @@
 {
     "genre" : [
-        {"id" : 1, "name" : "Action", "image" : "./data/action"},
-        {"id" : 2, "name" : "Romance", "image" : "./data/romance"},
-        {"id" : 3, "name" : "Comedy", "image" : "./data/comedy"},
+        {"id" : 1, "name" : "Action", "image" : "http://localhost:3000/images/action.jpeg"},
+        {"id" : 2, "name" : "Romance", "image" : "http://localhost:3000/images/romance.jpeg"},
+        {"id" : 3, "name" : "Comedy", "image" : "http://localhost:3000/images/comedy.jpeg"},
         {"id" : 4},
         {"id" : 5, "name" : "Adventure"}
     ]
