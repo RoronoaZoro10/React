@@ -42,3 +42,11 @@ button{
     height : 500px;
     margin: 20px;
 }
+
+.heroNames p{
+    color : white;
+}
+
+.heroNames {
+    border : 1px solid white;
+}

@@ -1,0 +1,12 @@
+to set up react app:-
+* npm install vite@latest - this code is used to install vite
+* npm create vite@latest - with this we can able to create react app
+* npm cd folder name - once the app folder is created, get inside the folder
+* npm install - this command will install all the dependency required for react
+* npm run dev - this command is used to host the website
+
+the below code will host json data -
+npx json-server --watch data/dummyData.json --port 3000 --static ./data
+
+to install router - 
+npm install react-router-dom

@@ -1,0 +1,20 @@
+{
+    "names" : [
+        {
+            "hero" : "Monkey D luffy",
+            "show" : "One piece"
+        },
+        {
+            "hero" : "Naruto Uzumaki",
+            "show" : "Naruto"
+        },
+        {
+            "hero" : "Asta",
+            "show" : "Black clover"
+        },
+        {
+            "hero" : "Ichigo kurasake",
+            "show" : "Bleach"
+        }
+    ]
+}

@@ -6,12 +6,15 @@ import romance from './assets/romance.jpeg'
 import comedy from './assets/comedy.jpeg'
 import sliceoflife from './assets/sliceoflife.jpeg'
 import GenreList from './GenreList'
+import NameList from './NameList'
+import {createBrowserRouter} from 'react-router-dom'
+
 function App() {
+
   return (
     <>
-     <h1>Welcome to the anime world</h1>
-     <GenreList/>
-     <PageFooter1/>
+     
+     <NameList/>
     </>
   )
 }
