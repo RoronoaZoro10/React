@@ -8,6 +8,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NameList from './NameList.jsx'
 import { Link } from 'react-router-dom'
 import ErrorPage from './ErrorPage.jsx'
+import Description from './Description.jsx'
+import Login from './Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path : '/NameList',
     element : <NameList />
+  },
+  {
+    path : '/desc',
+    element : <Description />
+  },
+  {
+    path : "/login",
+    element : <Login />
   }
 ])
 
