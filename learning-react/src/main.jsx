@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom'
 import ErrorPage from './ErrorPage.jsx'
 import Description from './Description.jsx'
 import Login from './Login.jsx'
+import Flex from './Flex.jsx'
+import Grid from './Grid.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,11 +30,19 @@ const router = createBrowserRouter([
   {
     path : "/login",
     element : <Login />
+  },
+  {
+    path : "/flex",
+    element : <Flex />
+  },
+  {
+    path : "/grid",
+    element : <Grid />
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+     <RouterProvider router={router} />
   </StrictMode>,
 )
